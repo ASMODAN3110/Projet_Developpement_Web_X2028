@@ -1,0 +1,23 @@
+.termes {
+    background: linear-gradient(180deg, #fff 11%, #CFBD97 90%);
+    height:fit-content;
+    width: fit-content;
+  }
+  .termes h1{
+    color:#000000;
+    text-align: center;
+  }
+
+  .text p{
+    color:#000000;
+    font-size: 3rem;
+    
+   
+  }
+
+  .text strong{
+    color:#000000;
+    font-size: 4rem;
+    margin-top: 10%;
+   
+  }

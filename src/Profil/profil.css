@@ -1,0 +1,143 @@
+/* ProfilePage.css */
+*{
+    width: fit-content;
+    background-color: #000;
+}
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: Arial, sans-serif;
+    background-color: #cfbd98;
+    padding: 2rem;
+    width: fit-content;
+    
+    margin: 0 auto;
+  }
+  
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 2rem;
+  }
+  
+  .title {
+    font-size: 2rem;
+    font-weight: bold;
+    margin: 0;
+  }
+  
+  .nav-links {
+    display: flex;
+    gap: 1rem;
+  }
+  
+  .nav-link {
+    text-decoration: none;
+    color: #333;
+    font-size: 1.1rem;
+    font-weight: bold;
+  }
+  
+  .nav-link:hover {
+    color: #666;
+  }
+  
+  .profile-section {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+    margin-bottom: 2rem;
+  }
+  
+  .profile-field {
+    display: flex;
+    align-items: center;
+    text-align: left;
+    margin-bottom: 0.5rem;
+    justify-content: right;
+  }
+  
+  .label {
+    font-weight: bold;
+    margin-right: 1rem;
+    min-width: 100px;
+  }
+  
+  .input {
+    flex-grow: 1;
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  .order-history-section {
+    width: 100%;
+    
+  }
+  
+  .section-title {
+    margin-bottom: 1rem;
+  }
+  
+  .order-history-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 0.9rem;
+    background-color: #ffff;
+    
+  }
+  
+  .order-history-table th,
+  .order-history-table td {
+    padding: 0.5rem;
+    text-align: left;
+    border: 1px solid #000;
+  }
+  
+  .order-history-table th {
+    background-color: #fff;
+  }
+  
+  @media (max-width: 768px) {
+    .container {
+      padding: 1rem;
+    }
+  
+    .header {
+      flex-direction: column;
+      align-items: flex-start;
+      margin-bottom: 1rem;
+    }
+  
+    .title {
+      font-size: 1.5rem;
+    }
+  
+    .nav-links {
+      flex-wrap: wrap;
+      justify-content: center;
+      margin-top: 1rem;
+    }
+  
+    .nav-link {
+      font-size: 1rem;
+    }
+  
+    .profile-field {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  
+    .label {
+      margin-right: 0;
+      margin-bottom: 0.25rem;
+    }
+  
+    .input {
+      width: 100%;
+    }
+  }

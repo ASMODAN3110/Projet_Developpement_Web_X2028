@@ -1,0 +1,29 @@
+.section{
+    background: linear-gradient(180deg, #000000 11%, #CFBD97 90%);
+}
+.section h1{
+    text-align: center;
+}
+
+.div2{
+    display:flex;
+    justify-content: space-between;
+    
+}
+.section p{
+    color: #fff;
+    font-size: 3rem;
+    text-wrap: wrap;
+    width:10cm;
+}
+
+.section img{
+    width:10cm;
+    height: 8cm;
+}
+
+code{
+    display: flex;
+    justify-content: space-between;
+    margin-left: 20cm;
+}

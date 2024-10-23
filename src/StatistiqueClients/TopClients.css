@@ -1,0 +1,155 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.statistiques {
+  position: relative;
+  width: 1518px;
+
+  background: linear-gradient(180deg, #000000 11%, #CFBD97 90%);
+}
+body {
+  font-family: Arial, sans-serif;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  max-height: fit-content;
+  width:100vw ;
+  
+}
+
+
+.header {
+  background-color: #CFBD97;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  width: 100vw;
+  padding: 1rem;
+  
+  
+}
+
+.logo {
+  height: 50px;
+  border-radius: 50%;
+}
+
+
+.nav {
+  display: flex;
+  gap: 50px
+  
+  
+}
+
+.nav a {
+  text-decoration: none;
+  color: #000;
+  align-items: center;
+  padding: 10px;
+
+}
+
+.actions {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.actions input {
+  padding: 5px;
+}
+
+.cart-icon {
+  font-size: 24px;
+}
+
+.main {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  background: linear-gradient(180deg, #000000 11%, #CFBD97 90%);
+}
+
+h1 {
+  text-align: center;
+  color: #fff;
+}
+
+.filter {
+  display: flex;
+  justify-content: center;
+  margin: 20px 0;
+}
+
+.filter select {
+  padding: 10px;
+  font-size: 16px;
+}
+
+.top-clients-table {
+  width: 100%;
+  max-width: 600px;
+  margin: 0 auto;
+  border-collapse: collapse;
+  color: #fff;
+}
+
+.top-clients-table th, .top-clients-table td {
+  border: 1px solid #fff;
+  padding: 10px;
+  text-align: center;
+}
+
+
+@media (max-width: 768px) {
+  
+    .header {
+      flex-direction: column; /* Change la direction pour les petits écrans */
+      align-items: flex-start; /* Aligne les éléments au début */
+    }
+  
+    .nav {
+      flex-direction: column; /* Empile les éléments de navigation */
+      gap: 10px; /* Espace entre les liens */
+      margin: 1rem 0; /* Ajoute de l'espace en haut et en bas */
+    }
+  
+    .actions {
+      width: 100%; /* Prend toute la largeur */
+      margin: 1rem 0; /* Ajoute de l'espace en haut et en bas */
+    }
+  
+    .actions input {
+      width: 100%; /* Prend toute la largeur disponible */
+    }
+  .footer-content {
+    width:100px;
+    flex-direction: column; /* Stack sections vertically */
+    align-items: center;
+  }
+ 
+}
+
+.actions {
+  flex-direction: column;
+  gap: 10px;
+  margin-left: 600px;
+}
+
+.act {
+  margin-right: 80px;
+  gap: 10px;
+}
+
+.top-clients-table th, .top-clients-table td {
+  font-size: 14px;
+}
+
