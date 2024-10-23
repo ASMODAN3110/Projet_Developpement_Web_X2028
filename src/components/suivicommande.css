@@ -1,0 +1,106 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    height: 100%; /* Hauteur de la fenêtre */
+    background: linear-gradient(to bottom, #000000 50%, #D8CBAF 100%);
+    color: white;
+    display: flex;
+    flex-direction: column;
+}
+
+.header {
+    display: flex;
+    flex-direction: column; /* Permet d'empiler les éléments */
+    align-items: flex-start; /* Aligner le logo et les boutons à gauche */
+    background-color: black; /* Couleur beige */
+    padding: 20px; /* Espacement interne */
+}
+
+.nav-container {
+    display: flex;
+    align-items: center; /* Aligner le logo et les boutons */
+    width: 100%; /* Prendre toute la largeur de l'écran */
+}
+
+.logo {
+    height: 168px; /* Ajuste la hauteur du logo */
+    width: 309px;  /* Ajuste la largeur du logo */
+    margin-right: 20px; /* Espacement à droite du logo */
+}
+
+.nav {
+    display: flex;
+    gap: 10px; /* Espacement entre les boutons */
+}
+
+.nav-button {
+    background: transparent; /* Pas de fond */
+    color: #CFBD97; /* Couleur du texte */
+    border: none; /* Pas de contour */
+    padding: 10px 15px; /* Espacement interne */
+    cursor: pointer; /* Curseur en main */
+    font-size: 16px; /* Taille de la police */
+    width: 298px; /* Largeur des boutons */
+    height: 35px; /* Hauteur des boutons */
+    transition: background-color 0.3s; /* Transition pour l'effet de survol */
+}
+
+.nav-button:hover {
+    background-color: rgba(255, 255, 255, 0.2); /* Effet de survol */
+}
+
+.divider {
+    width: 100%; /* Largeur de la sous-ligne */
+    border: 0; /* Supprime le contour par défaut */
+    height: 2px; /* Épaisseur de la ligne */
+    background-color: #D8CBAF; /* Couleur de la sous-ligne */
+    margin: 10px 0; /* Espacement vertical */
+}
+
+.header-title {
+    text-align: center; /* Centrer le texte */
+    margin: 10px 0; /* Espacement autour du titre */
+    color: white; /* Couleur du texte */
+    width: 100%;
+}
+
+.main-content {
+    flex: 1; /* Prendre tout l'espace disponible */
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Centrer verticalement */
+    align-items: center; /* Centrer horizontalement */
+}
+
+.box {
+    background-color: #D8CBAF; /* Couleur beige */
+    width: 500px; /* Largeur des boîtes */
+    height: 150px; /* Hauteur des boîtes */
+    border-radius: 20px; /* Coins arrondis */
+    margin: 40px 0; /* Espacement vertical entre les boîtes */
+    display: flex; /* Utiliser flexbox pour aligner le contenu */
+    align-items: center; /* Centrer verticalement */
+    padding: 20px; /* Espacement interne */
+}
+
+.plate-image {
+    height: 70px; /* Ajuster la hauteur de l'image du plat */
+    width: 70px; /* Ajuster la largeur de l'image du plat */
+    margin-right: 20px; /* Espacement à droite de l'image */
+}
+
+.info {
+    display: flex;
+    flex-direction: column; /* Alignement vertical des informations */
+    color: black; /* Couleur du texte à l'intérieur des boîtes */
+    font-size: 20px; /* Taille de la police dans les boîtes */
+}
+
+.footer {
+    height: 50px; /* Hauteur du pied de page */
+    background-color: #D8CBAF; /* Couleur du pied de page */
+    text-align: center; /* Centrer le texte dans le pied de page */
+}
