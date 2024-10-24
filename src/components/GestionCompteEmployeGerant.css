@@ -1,0 +1,92 @@
+body {
+    background: linear-gradient(to bottom, #000000, #cfbd97);
+    font-family: "inter", sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+.navbar {
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 20px;
+    background-color: #333;
+}
+
+.navbar ul {
+    display: flex;
+    list-style: none;
+    padding-left: 0;
+}
+
+.navbar ul li {
+    margin-left: 40px;
+    color: #d4c08b;
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.navbar ul li:hover {
+    color: #ffffff;
+    cursor: pointer;
+}
+
+
+.text-center {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    width: 100%;
+    max-width: 600px;
+}
+
+.input-field {
+    background-color: #d4c08b;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.input-field:focus {
+    outline: none;
+}
+
+.password-field {
+    display: flex;
+    align-items: center;
+}
+
+.password-field input {
+    flex: 1;
+}
+
+.password-field i {
+    margin-left: -30px;
+    cursor: pointer;
+}
+
+.button {
+    background-color: #cfbd97;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 100px;
+    cursor: pointer;
+    margin-top: 20px;
+}

@@ -1,13 +1,14 @@
 import React from 'react';
 import './Header.css'; // Assure-toi de créer ce fichier CSS
+import { NavLink } from 'react-router-dom';
 
 const Header = () => {
     const dishes = [
         { name: 'LE TARO', price: '2500F', image: '../assets/OIP (1).jpeg' },
         { name: 'NDOLE', price: '1000F', image: '../assets/download.jpeg' },
-        { name: 'POULET DIRECTEUR GENERAL(DG)', price: '2000F', image: '../assets/th (4).jpeg' },
+        { name: 'POULET DIRECTEUR GENERAL(DG)', price: '2000F', image: '../assets/download (1).jpeg' },
         { name: 'LE ERU', price: '1000F', image: '../assets/th (3).jpeg' },
-        { name: "L'OKOK SUCRE", price: '1000F', image: '../assets/OIP (1).jpeg' },
+        { name: "L'OKOK SUCRE", price: '1000F', image: '../assets/th (4).jpeg' },
         { name: 'MET DE PISTACHE', price: '2000F', image: '../assets/pudding.png'},
     ];
 
@@ -19,11 +20,11 @@ const Header = () => {
 
     return (
         <div className="container">
-            <header className="d-flex justify-content-between align-items-center my-4">
+            <header className="d-flex justify-content-between align-items-center">
                 <img src="../assets/Screenshot (171) 2.png" alt="Logo du restaurant" className="logo" />
                 <div>
-                    <button className="btn btn-primary me-2 btn-custom">Se connecter</button>
-                    <button className="btn btn-secondary btn-custom">S'inscrire</button>
+                    <NavLink className='btn btn-secondary btn-custom' to="/registration">s'inscrire</NavLink>
+                    <NavLink className='btn btn-secondary btn-custom' to="/login">se connecter</NavLink>
                 </div>
             </header>
 
@@ -65,4 +66,6 @@ const Header = () => {
     );
 };
 
-export default Header;
+export default Header;  
+
+/*police text"jotione" sof pour les button */
