@@ -39,6 +39,12 @@ const SectionPanier = () => {
     setProducts(updatedProducts);
   };
 
+  // Handle product removal
+  const handleRemoveProduct = (productId) => {
+    const updatedProducts = products.filter(product => product.id !== productId);
+    setProducts(updatedProducts);
+  };
+
   return (
     <Container 
       fluid 
@@ -80,7 +86,6 @@ const SectionPanier = () => {
             <Col xs={6} className="d-flex justify-content-between align-items-center">
               <div>
                 <h5 className="mb-0" style={{ color: 'white' }}>{product.title}</h5>
-                <p className="mb-0" style={{ color: 'white' }}>{product.description}</p>
               </div>
               <span className="fw-bold" style={{ color: 'white' }}>
                 {/* Display total price = unit price * quantity */}
@@ -90,7 +95,11 @@ const SectionPanier = () => {
 
             {/* Col for Quantity and Delete Button */}
             <Col xs={4} className="d-flex justify-content-end align-items-center">
-              <Button variant="danger" className="me-3">
+              <Button 
+                variant="danger" 
+                className="me-3"
+                onClick={() => handleRemoveProduct(product.id)} // Remove product on button click
+              >
                 <FontAwesomeIcon icon={faTrashAlt} /> 
               </Button>
               <Form.Label className="me-2 mb-0" style={{ color: 'white' }}>Quantité :</Form.Label>

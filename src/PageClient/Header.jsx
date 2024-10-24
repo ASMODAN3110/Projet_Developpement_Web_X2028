@@ -1,14 +1,15 @@
 import React from "react";
-import './App.css';
+import './Page.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCartShopping, faSearch } from '@fortawesome/free-solid-svg-icons';
-import logo from "../assets/logo.png";
+import logo from "../assets/logo.png"
+
 
 const Header = () => {
   return (
     <header className="header">
       <div className="logo">
-        <img src="../assets/logo.png" alt="Zeduc@Space" />
+        <img src={logo} alt="Logo" className="logo" />
       </div>
       <nav>
         <ul className="nav-links">

@@ -3,6 +3,7 @@ import './Paiement.css';
 import Header2 from '../StatistiqueClients/Header2';
 import Footer from '../Menu/Footer';
 import {link} from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
 
 const Paiement = () => {
   const [codeReduction, setCodeReduction] = useState('');

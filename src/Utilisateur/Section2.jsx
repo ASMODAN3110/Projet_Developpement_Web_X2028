@@ -4,6 +4,7 @@ import { Button, Card, Row, Col, Container } from 'react-bootstrap';
 import photo from '../assets/photo.jpg';
 import photo2 from '../assets/photo2.jpg';
 import photo3 from '../assets/photo3.jpg';
+import {NavLink} from 'react-router-dom';
 
 
 const products = [
@@ -23,8 +24,9 @@ const Section2 = () => {
             <p>
               Découvrez nos produits exclusifs et profitez de nos offres spéciales.
             </p>
-            <Button style={{ backgroundColor: "#000000" }} variant="primary">En savoir plus</Button>
-          </div>
+            <NavLink className='btn btn-secondary' style={{ backgroundColor: "#000000" }} variant="primary" to= "/apropos"> En savoir plus
+            </NavLink>
+            </div>
 
           {/* Deuxième div à droite avec une grille */}
           <div className="flex-grow-1 d-flex justify-content-end">
@@ -36,7 +38,7 @@ const Section2 = () => {
                     <Card.Body>
                       <Card.Title>{product.title}</Card.Title>
                       <Card.Text>{product.price}</Card.Text>
-                      <Button style={{ backgroundColor: "#000000" }} variant="success">Commander</Button>
+                      <NavLink className='btn btn-secondary' style={{ backgroundColor: "#000000" }} variant="success" to="/Menu">Commander</NavLink>
                     </Card.Body>
                   </Card>
                 </Col>

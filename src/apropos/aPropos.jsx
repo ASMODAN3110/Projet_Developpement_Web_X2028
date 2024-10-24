@@ -1,13 +1,13 @@
 import React from "react";
-import Header from "../Menu/Header";
-import Footer from "../Menu/Footer";
+import Header from "../PageClient/Header";
+import Footer from "../PageClient/Footer";
 import './About.css';
 
-function About() {
+function Apropos() {
     return (
       <div>
         <Header />
-        <div className="about">
+        <div className="Apropos">
             <h1>A Propos de Zeduc@Space</h1>
             
             <div className="text">
@@ -25,4 +25,4 @@ function About() {
     );
   }
   
-  export default About;
+  export default Apropos;

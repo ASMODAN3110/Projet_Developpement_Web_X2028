@@ -4,7 +4,10 @@
   padding: 0px ; 
   box-sizing:border-box ;
   
+.container { 
+  display: flex;
 
+}
 
 }
 .header {
@@ -122,4 +125,5 @@
   margin-bottom: 30px;
   font-weight: 500;
   position: relative;
+  
   }

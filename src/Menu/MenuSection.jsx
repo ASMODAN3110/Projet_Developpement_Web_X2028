@@ -7,24 +7,24 @@ import ndole from '../assets/ndole.jpeg';
 import shrimps from '../assets/shrimps.jpg';
 import Poulet from '../assets/Poulet.jpeg';
 import porc from '../assets/porc.jpeg';
-import shrimps from '../assets/coke.jpeg';
-import Poulet from '../assets/Mojito.jpeg';
-import porc from '../assets/mai tai.jpeg';
+import coke from '../assets/coke.jpeg';
+import Mojito from '../assets/Mojito.jpeg';
+import mai from '../assets/mai.jpeg';
 
 
 const foodItems = [
-  { name: "Poulet Panné", price: "4000CFA", image: "../assets/panne.jpeg" },
-  { name: "Met de Pistache", price: "2000CFA", image: "../assets/pudding.jpeg" },
-  { name: "Ndolé", price: "3000CFA", image: "../assets/ndole.jpeg" },
-  { name: "Crevettes", price: "4000CFA", image: "../assets/shrimps.jpg" },
-  { name: "Poulet Braisé", price: "2500CFA", image: "../assets/poulet.jpeg" },
-  { name: "Porc Braisé", price: "3500CFA", image: "../assets/porc.jpeg" },
+  { name: "Poulet Panné", price: "4000CFA", image: panne },
+  { name: "Met de Pistache", price: "2000CFA", image: pudding },
+  { name: "Ndolé", price: "3000CFA", image: ndole },
+  { name: "Crevettes", price: "4000CFA", image: shrimps },
+  { name: "Poulet Braisé", price: "2500CFA", image: Poulet },
+  { name: "Porc Braisé", price: "3500CFA", image: porc },
 ];
 <hl></hl>
 const drinkItems = [
-  { name: "Mai Tai", price: "2000CFA", image: "../assets/mai tai.jpeg" },
-  { name: "Mojito", price: "2000CFA", image: "../assets/Mojito.jpeg" },
-  { name: "Coca Cola", price: "1000CFA", image: "../assets/coke.jpeg" },
+  { name: "Mai Tai", price: "2000CFA", image: mai },
+  { name: "Mojito", price: "2000CFA", image: Mojito},
+  { name: "Coca Cola", price: "1000CFA", image: coke },
 ];
 
 const MenuSection = () => {

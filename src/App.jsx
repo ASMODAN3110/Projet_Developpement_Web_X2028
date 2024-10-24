@@ -1,9 +1,18 @@
 import React from "react";
-import { Panier } from "./Panier/Panier";
+import Reclamation from "./Reclamation/Reclamation";
+import{ BrowserRouter as Router, Routes,Route} from 'react-router-dom'
+import Section2 from "./Utilisateur/Section2";
+import Apropos from "./apropos/aPropos";
+import Homepage from "./Utilisateur/Homepage";
+import Menu2 from "./Menu/Menu2";
+// //import { Panier } from "./Panier/Panier";
+// import { Reclamation } from "./Reclamation/Reclamation";
+//import { Panier } from "./Panier/Panier";
+//import GestionMenu from "./GestionMenu/GestionMenu";
 // //import ReclamationForm from "./Reclamation/Reclamation.jsx";
 // // import Activite from "./Acceuil/Activite.jsx";
 // //import Acceuil from "./Acceuil/Acceuil.jsx";
-// //import Menu from "./Menu/Menu2.jsx";
+//import Menu from "./Menu/Menu2.jsx";
 // // import Acceuil from "./Acceuil/Acceuil.jsx";
 // import 'bootstrap/dist/css/bootstrap.min.css';
 // import 'bootstrap/dist/js/bootstrap.js'
@@ -45,12 +54,19 @@ import { Panier } from "./Panier/Panier";
 // export default App;
 
 
+
 function App() {
   return (
-    <div>
-   <Panier/>
-   
-    </div>
+    <Router>
+          <div>
+            <Routes>
+              <Route path="/" element={<Homepage/>}/>  
+              <Route path="/apropos" element={<Apropos/>}/>
+              <Route path="/Menu" element={<Menu2/>}/>
+              
+            </Routes>
+          </div>
+   </Router>
   );
 }
 

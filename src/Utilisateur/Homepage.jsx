@@ -1,11 +1,10 @@
 import React from 'react'
-// import CustomNavbar from './Navbar';
 import Hero from './Hero';
-import Footer from '../Menu/Footer';
+import Footer from '../PageClient/Footer';
 import Section2 from './Section2';
 import Section3 from './Section3';
 // import {link} from 'react-router-dom';
-import Header from '../Menu/Header';
+import Header from '../PageClient/Header';
 
 const Homepage = () => {
     return (

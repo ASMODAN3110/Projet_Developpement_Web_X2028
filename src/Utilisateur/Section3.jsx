@@ -28,9 +28,9 @@ const Section = () => {
           {product.description} {/* Description dynamique */}
         </Card.Text>
         <div className="d-flex justify-content-center mt-auto">
-          <Button style={{ backgroundColor: '#000000' }} variant="primary">
+          <NavLink className='btn btn-secondary' style={{ backgroundColor: '#000000' }} variant="primary" to="Actualite">
             Voir plus
-          </Button>
+          </NavLink>
         </div>
       </Card.Body>
     </Card>

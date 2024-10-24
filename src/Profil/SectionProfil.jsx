@@ -1,8 +1,8 @@
 import React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import { Container, Row, Col, Form, Button } from 'react-bootstrap';
+import { Container, Row, Col, Form } from 'react-bootstrap';
 
-const SectionReclamation = () => {
+const Profile = ({ user }) => {
   return (
     <Container className="my-5">
       {/* Div contenant le titre */}
@@ -22,42 +22,38 @@ const SectionReclamation = () => {
           />
         </Col>
 
-        {/* Div droite avec un formulaire */}
+        {/* Div droite avec les informations utilisateur */}
         <Col md={6}>
           <Form>
             <Form.Group className="mb-3" controlId="formNom">
               <Form.Label>Nom</Form.Label>
-              <Form.Control type="text" placeholder="Entrez votre nom" />
+              <Form.Control type="text" value={user.nom} readOnly />
             </Form.Group>
 
             <Form.Group className="mb-3" controlId="formPrenom">
               <Form.Label>Prénom</Form.Label>
-              <Form.Control type="text" placeholder="Entrez votre prénom" />
+              <Form.Control type="text" value={user.prenom} readOnly />
             </Form.Group>
 
             <Form.Group className="mb-3" controlId="formEmail">
               <Form.Label>Email</Form.Label>
-              <Form.Control type="email" placeholder="Entrez votre email" />
+              <Form.Control type="email" value={user.email} readOnly />
             </Form.Group>
 
             <Form.Group className="mb-3" controlId="formLocalisation">
               <Form.Label>Localisation</Form.Label>
-              <Form.Control type="text" placeholder="Entrez votre localisation" />
+              <Form.Control type="text" value={user.localisation} readOnly />
             </Form.Group>
 
             <Form.Group className="mb-3" controlId="formParrainage">
               <Form.Label>Code de parrainage</Form.Label>
-              <Form.Control type="text" placeholder="Entrez le code de parrainage" />
+              <Form.Control type="text" value={user.codeParrainage} readOnly />
             </Form.Group>
 
             <Form.Group className="mb-3" controlId="formPointsFidelite">
               <Form.Label>Points de fidélité</Form.Label>
-              <Form.Control type="number" placeholder="Entrez vos points de fidélité" />
+              <Form.Control type="number" value={user.pointsFidelite} readOnly />
             </Form.Group>
-
-            <Button variant="primary" type="submit">
-              Envoyer
-            </Button>
           </Form>
         </Col>
       </Row>
@@ -65,4 +61,16 @@ const SectionReclamation = () => {
   );
 };
 
-export default SectionReclamation;
+// Exemple d'utilisation avec des données utilisateur
+const userInfo = {
+  nom: 'Dupont',
+  prenom: 'Jean',
+  email: 'jean.dupont@example.com',
+  localisation: 'Paris',
+  codeParrainage: 'PAR123',
+  pointsFidelite: 150,
+};
+
+export default function App() {
+  return <Profile user={userInfo} />;
+}
