@@ -1,0 +1,17 @@
+@keyframes scroll {
+    0% { transform: translateX(100%); }
+    100% { transform: translateX(-100%); }
+  }
+
+  body {
+    background: linear-gradient(90deg, #cfbd97 90%, black 11%);
+  }
+  
+  .bg-cfbd97 {
+    background-color: #cfbd97; /* Couleur de fond pour le container */
+  }
+  
+  input.form-control {
+    background-color: #cfbd97; /* Couleur de fond pour les champs de saisie */
+  }
+  
