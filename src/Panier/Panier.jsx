@@ -1,8 +1,9 @@
 import React from 'react'
-import Header2 from '../StatistiqueClients/Header2'
 import SectionPanier  from './SectionPanier'
 import HeaderPanier from './HeaderPanier'
-import Footer from '../Menu/Footer'
+
+import Header2 from '../PageClient/Header2'
+import Footer from '../PageClient/Footer'
 
 export const Panier = () => {
   return (

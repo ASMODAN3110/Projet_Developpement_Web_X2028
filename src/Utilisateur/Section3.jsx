@@ -2,6 +2,7 @@ import React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { Container, Row, Col, Card, Button } from 'react-bootstrap';
 import bg from '../assets/bg.png';
+import {NavLink} from 'react-router-dom';
 
 
 const products = [

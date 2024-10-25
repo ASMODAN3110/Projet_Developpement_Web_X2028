@@ -1,6 +1,6 @@
 import React from "react";
-import Header2 from '../StatistiqueClients/Header2.jsx';
-import Footer from "../Menu/Footer.jsx";
+import Header2 from '../PageClient/Header2.jsx';
+import Footer from "../PageClient/Footer.jsx";
 import './Actualite.css'
 
 const Actualite = () => {

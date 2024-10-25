@@ -1,12 +1,9 @@
 import React from "react";
-import Header from "../PageClient/Header";
-import Footer from "../PageClient/Footer";
 import './About.css';
 
 function Apropos() {
     return (
       <div>
-        <Header />
         <div className="Apropos">
             <h1>A Propos de Zeduc@Space</h1>
             
@@ -18,10 +15,11 @@ function Apropos() {
                 tout en savourant nos plats délicieux. Que ce soit pour les matchs de Ligue des Champions diffusés sur
                 notre écran géant ou une partie de billard entre amis, ZeDuc@Space est l'endroit parfait pour se détendre et se régaler.
              </p>
-        </div>
+            </div>
       </div>
-        <Footer />
+     
       </div>
+      
     );
   }
   

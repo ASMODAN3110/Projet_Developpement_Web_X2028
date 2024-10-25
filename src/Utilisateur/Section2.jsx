@@ -38,7 +38,7 @@ const Section2 = () => {
                     <Card.Body>
                       <Card.Title>{product.title}</Card.Title>
                       <Card.Text>{product.price}</Card.Text>
-                      <NavLink className='btn btn-secondary' style={{ backgroundColor: "#000000" }} variant="success" to="/Menu">Commander</NavLink>
+                      <NavLink className='btn btn-secondary' style={{ backgroundColor: "#000000" }} variant="success" to="/panier">Commander</NavLink>
                     </Card.Body>
                   </Card>
                 </Col>

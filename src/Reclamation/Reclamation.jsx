@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import './Reclamation.css'; // Importation du fichier CSS pour la mise en page
-import Footer from '../PageClient/Footer';
+//import Footer from '../PageClient/Footer';
 import Header2 from '../PageClient/Header2';
 
 const Reclamation = () => {
@@ -23,7 +23,7 @@ const Reclamation = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
     console.log('Formulaire soumis :', form);
-    // Ajouter la logique d'envoi des données
+    
   };
 
   return (
@@ -80,7 +80,7 @@ const Reclamation = () => {
           <button type="submit">Soumettre</button>
         </form>
       </div>
-      <Footer />
+      {/* <Footer /> */}
     </div>
   );
 };

@@ -2,10 +2,12 @@ import React from "react";
 import Reclamation from "./Reclamation/Reclamation";
 import{ BrowserRouter as Router, Routes,Route} from 'react-router-dom'
 import Section2 from "./Utilisateur/Section2";
-import Apropos from "./apropos/aPropos";
 import Homepage from "./Utilisateur/Homepage";
 import Menu2 from "./Menu/Menu2";
-// //import { Panier } from "./Panier/Panier";
+import Actualite from "./Actualite/Actualite";
+import { Panier } from "./Panier/Panier";
+import TopClients from "./StatistiqueClients/TopClients";
+import About from "./apropos/About";
 // import { Reclamation } from "./Reclamation/Reclamation";
 //import { Panier } from "./Panier/Panier";
 //import GestionMenu from "./GestionMenu/GestionMenu";
@@ -17,7 +19,7 @@ import Menu2 from "./Menu/Menu2";
 // import 'bootstrap/dist/css/bootstrap.min.css';
 // import 'bootstrap/dist/js/bootstrap.js'
 // //import Top from "./StatistiqueClients/Top.jsx";
-// import TopClients from "./StatistiqueClients/TopClients.jsx";
+//TopClients from "./StatistiqueClients/TopClients.jsx";
 //import About from "./apropos/aPropos";
 //import Termes from "./Termes/Termes";
 //import ProfilePage from "./Profil/Profil.jsx";
@@ -61,9 +63,12 @@ function App() {
           <div>
             <Routes>
               <Route path="/" element={<Homepage/>}/>  
-              <Route path="/apropos" element={<Apropos/>}/>
-              <Route path="/Menu" element={<Menu2/>}/>
-              
+              <Route path="/apropos" element={<About/>}/>
+              <Route path="/menu" element={<Menu2/>}/>
+              <Route path="/actualite" element={<Actualite/>}/>
+              <Route path="/panier" element={<Panier/>}/>
+              <Route path="/statistiqueclients" element={<TopClients/>}/>
+
             </Routes>
           </div>
    </Router>

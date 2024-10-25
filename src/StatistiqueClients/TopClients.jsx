@@ -1,9 +1,10 @@
 import { useState } from 'react';
 import './TopClients.css';
-import Footer from '../Menu/Footer';
+import Footer from '../PageClient/Footer';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCartShopping, faSearch } from '@fortawesome/free-solid-svg-icons';
-import Header2 from './Header2.jsx';
+import Header2 from '../PageClient/Header2';
+
 
 const TopClients = () => {
   const [filter, setFilter] = useState('Mois');
