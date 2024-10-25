@@ -33,7 +33,8 @@ body {
 .left-section {
     width: 50%;
     flex: 59;
-    background-image: url('../../assets/Miam Miam.png');
+    background-image: url('../assets/Screenshot (171) 2.png');
+    background-repeat: no-repeat;
     background-position: center;
 }
 
