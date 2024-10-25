@@ -1,0 +1,58 @@
+.documentation-content {
+    padding: 20px;
+    background-color: #f5f5f5;
+    min-height: calc(100vh - 97px);
+}
+
+.text-container {
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: white;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.header-container {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    position: relative;
+}
+
+.return-button {
+    position: absolute;
+    left: 0;
+    padding: 8px 20px;
+    background-color: #000000;
+    color: #cfbd97;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+
+.return-button:hover {
+    background-color: #333333;
+}
+
+.doc-title {
+    color: #000000;
+    margin: 0 auto;
+    font-size: 24px;
+}
+
+.doc-paragraph {
+    margin-bottom: 15px;
+    line-height: 1.6;
+}
+
+.doc-list {
+    margin-bottom: 15px;
+    padding-left: 20px;
+}
+
+.doc-list li {
+    margin-bottom: 10px;
+}
