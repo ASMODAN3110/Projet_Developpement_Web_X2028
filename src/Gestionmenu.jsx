@@ -1,7 +1,8 @@
 import React, { useState } from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { Link } from 'react-router-dom';
-
+import { useNavigate } from 'react-router-dom';
+import { FaTimes } from 'react-icons/fa';
 
 const Gestionmenu = () => {
   const [type, setType] = useState('nourriture');
@@ -61,6 +62,12 @@ const Gestionmenu = () => {
     if (/^\d*$/.test(value)) {
       setPrice(value);
     }
+
+
+  };
+  const navigate = useNavigate();
+  const handleExit = () => {
+    navigate('/sheryl'); // Redirection vers la page "sheryl"
   };
 
   return (
@@ -87,7 +94,9 @@ const Gestionmenu = () => {
         }}
       >
         <h4 className="text-center mb-4">Gestion de menu</h4>
-
+        <div className="exit-icon position-absolute" style={{ top: '10px', right: '10px' }}>
+            <FaTimes onClick={handleExit} style={{ cursor: 'pointer', fontSize: '24px', color: '#fff' }} />
+            </div>
         {/* Radio buttons for type selection */}
         <div className="mb-3 d-flex justify-content-between align-items-center">
   <div className="d-flex align-items-center">

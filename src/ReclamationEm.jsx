@@ -19,7 +19,7 @@ const ReclamationEm = () => {
 
   // Fonction pour gérer la fermeture (redirection vers une autre page)
   const handleExit = () => {
-    navigate('/sheryl'); // Redirection vers la page "Sheryl"
+    navigate('/ListesReclamation'); // Redirection vers la page "listesReclamation"
   };
 
   return (

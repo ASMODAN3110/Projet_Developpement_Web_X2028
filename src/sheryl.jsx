@@ -26,13 +26,15 @@ const Sheryl = () => {
                     <div className="overlay text-center">Que désirez-vous faire aujourd'hui ?</div>
                 </div>
                 <div className="right">
-                <Link className= "btn btn-secondary" to="/menu">
-                    <button className="button" onClick={() => handleClick('Gérer le menu du jour')}>
-                        Gérer le menu du jour
-                    </button></Link>
-                    <Link className= "btn btn-secondary" to="/gestionmenu">Gérer les menu</Link>
-                    <Link className= "btn btn-secondary" to="/reclamation">Reclamations</Link>
-                    <Link className= "btn btn-secondary" to="/menu">Gérer le menu du jour</Link>
+    
+                    <Link className= "btn btn-secondary w-50 text-black" style={{
+                        backgroundColor : 'white', 
+                    }} to="/gestionmenu">Gérer les menu</Link>
+                    <br/>
+                    <br/>
+                    <Link className= "btn btn-secondary w-50 text-black"  style={{
+                        backgroundColor : 'white', 
+                    }} to="/ListesReclamation">Réclamations</Link>
                 </div>
             </div>
         </div>

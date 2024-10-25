@@ -1,5 +1,5 @@
 .message-container {
-    background: linear-gradient(180deg, #cfbd97 90%, #000 11%); /* Dégradé de haut en bas */
+    background: linear-gradient(180deg, #000 11%, #cfbd97 90%,); /* Dégradé de haut en bas */
     height: 100%;
     margin:0;
     padding: 0;

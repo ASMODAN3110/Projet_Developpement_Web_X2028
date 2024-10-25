@@ -6,6 +6,7 @@ import ReclamationE from './ReclamationE';
 import React from 'react'
 import {BrowserRouter as Router, Routes, Route} from 'react-router-dom'
 import ReclamationEm from './ReclamationEm';
+import ListesReclamation from './ListesReclamation';
 
 function App() {
   return (
@@ -15,7 +16,8 @@ function App() {
            <Route path="/" element={<Sheryl/>}/>
            <Route path="/gestionmenu" element={<Gestionmenu/>}/>
            <Route path="/reclamation" element={<ReclamationEm/>}/>
-           <Route path="/menu" element={<menu/>}/>
+           <Route path="/ListesReclamation" element={<ListesReclamation/>}/>
+           <Route path="/ReclamationEm" element={<ReclamationEm/>}/>
         </Routes>
       </div>
     </Router>
